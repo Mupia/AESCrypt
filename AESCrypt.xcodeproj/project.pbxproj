@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A78F6F9B199C451D00A0E7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6F9A199C451D00A0E7C4 /* Foundation.framework */; };
+		A78F6F9D199C451D00A0E7C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6F9C199C451D00A0E7C4 /* CoreGraphics.framework */; };
+		A78F6F9F199C451D00A0E7C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6F9E199C451D00A0E7C4 /* UIKit.framework */; };
+		A78F6FA5199C451D00A0E7C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A78F6FA3199C451D00A0E7C4 /* InfoPlist.strings */; };
+		A78F6FA7199C451D00A0E7C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78F6FA6199C451D00A0E7C4 /* main.m */; };
+		A78F6FAB199C451D00A0E7C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A78F6FAA199C451D00A0E7C4 /* AppDelegate.m */; };
+		A78F6FAD199C451D00A0E7C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78F6FAC199C451D00A0E7C4 /* Images.xcassets */; };
+		A78F6FB4199C451D00A0E7C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6FB3199C451D00A0E7C4 /* XCTest.framework */; };
+		A78F6FB5199C451D00A0E7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6F9A199C451D00A0E7C4 /* Foundation.framework */; };
+		A78F6FB6199C451D00A0E7C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F6F9E199C451D00A0E7C4 /* UIKit.framework */; };
+		A78F6FBE199C451D00A0E7C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A78F6FBC199C451D00A0E7C4 /* InfoPlist.strings */; };
+		A78F6FC0199C451D00A0E7C4 /* AESCryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78F6FBF199C451D00A0E7C4 /* AESCryptTests.m */; };
+		A7E4FED719AB29FA00DC7E98 /* AES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7E4FECD19AB29FA00DC7E98 /* AES.cpp */; };
+		A7E4FED819AB29FA00DC7E98 /* BFViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7E4FED019AB29FA00DC7E98 /* BFViewController.mm */; };
+		A7E4FED919AB29FA00DC7E98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E4FED219AB29FA00DC7E98 /* InfoPlist.strings */; };
+		A7E4FEDA19AB29FA00DC7E98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E4FED419AB29FA00DC7E98 /* Images.xcassets */; };
+		A7E4FEDB19AB29FA00DC7E98 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E4FED619AB29FA00DC7E98 /* NSString+Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A78F6FB7199C451D00A0E7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A78F6F8F199C451D00A0E7C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A78F6F96199C451D00A0E7C4;
+			remoteInfo = AESCrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A78F6F97199C451D00A0E7C4 /* AESCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AESCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78F6F9A199C451D00A0E7C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A78F6F9C199C451D00A0E7C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A78F6F9E199C451D00A0E7C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A78F6FA2199C451D00A0E7C4 /* AESCrypt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AESCrypt-Info.plist"; sourceTree = "<group>"; };
+		A78F6FA4199C451D00A0E7C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A78F6FA6199C451D00A0E7C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A78F6FA8199C451D00A0E7C4 /* AESCrypt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AESCrypt-Prefix.pch"; sourceTree = "<group>"; };
+		A78F6FA9199C451D00A0E7C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A78F6FAA199C451D00A0E7C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A78F6FAC199C451D00A0E7C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A78F6FB2199C451D00A0E7C4 /* AESCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AESCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78F6FB3199C451D00A0E7C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A78F6FBB199C451D00A0E7C4 /* AESCryptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AESCryptTests-Info.plist"; sourceTree = "<group>"; };
+		A78F6FBD199C451D00A0E7C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A78F6FBF199C451D00A0E7C4 /* AESCryptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESCryptTests.m; sourceTree = "<group>"; };
+		A7E4FECD19AB29FA00DC7E98 /* AES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AES.cpp; sourceTree = "<group>"; };
+		A7E4FECE19AB29FA00DC7E98 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		A7E4FECF19AB29FA00DC7E98 /* BFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFViewController.h; sourceTree = "<group>"; };
+		A7E4FED019AB29FA00DC7E98 /* BFViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BFViewController.mm; sourceTree = "<group>"; };
+		A7E4FED319AB29FA00DC7E98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		A7E4FED419AB29FA00DC7E98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7E4FED519AB29FA00DC7E98 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		A7E4FED619AB29FA00DC7E98 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A78F6F94199C451D00A0E7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F6F9D199C451D00A0E7C4 /* CoreGraphics.framework in Frameworks */,
+				A78F6F9F199C451D00A0E7C4 /* UIKit.framework in Frameworks */,
+				A78F6F9B199C451D00A0E7C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78F6FAF199C451D00A0E7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F6FB4199C451D00A0E7C4 /* XCTest.framework in Frameworks */,
+				A78F6FB6199C451D00A0E7C4 /* UIKit.framework in Frameworks */,
+				A78F6FB5199C451D00A0E7C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A78F6F8E199C451D00A0E7C4 = {
+			isa = PBXGroup;
+			children = (
+				A78F6FA0199C451D00A0E7C4 /* AESCrypt */,
+				A78F6FB9199C451D00A0E7C4 /* AESCryptTests */,
+				A78F6F99199C451D00A0E7C4 /* Frameworks */,
+				A78F6F98199C451D00A0E7C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A78F6F98199C451D00A0E7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A78F6F97199C451D00A0E7C4 /* AESCrypt.app */,
+				A78F6FB2199C451D00A0E7C4 /* AESCryptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A78F6F99199C451D00A0E7C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78F6F9A199C451D00A0E7C4 /* Foundation.framework */,
+				A78F6F9C199C451D00A0E7C4 /* CoreGraphics.framework */,
+				A78F6F9E199C451D00A0E7C4 /* UIKit.framework */,
+				A78F6FB3199C451D00A0E7C4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A78F6FA0199C451D00A0E7C4 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4FECD19AB29FA00DC7E98 /* AES.cpp */,
+				A7E4FECE19AB29FA00DC7E98 /* AES.h */,
+				A7E4FECF19AB29FA00DC7E98 /* BFViewController.h */,
+				A7E4FED019AB29FA00DC7E98 /* BFViewController.mm */,
+				A7E4FED119AB29FA00DC7E98 /* en.lproj */,
+				A7E4FED419AB29FA00DC7E98 /* Images.xcassets */,
+				A7E4FED519AB29FA00DC7E98 /* NSString+Base64.h */,
+				A7E4FED619AB29FA00DC7E98 /* NSString+Base64.m */,
+				A78F6FA9199C451D00A0E7C4 /* AppDelegate.h */,
+				A78F6FAA199C451D00A0E7C4 /* AppDelegate.m */,
+				A78F6FAC199C451D00A0E7C4 /* Images.xcassets */,
+				A78F6FA1199C451D00A0E7C4 /* Supporting Files */,
+			);
+			path = AESCrypt;
+			sourceTree = "<group>";
+		};
+		A78F6FA1199C451D00A0E7C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A78F6FA2199C451D00A0E7C4 /* AESCrypt-Info.plist */,
+				A78F6FA3199C451D00A0E7C4 /* InfoPlist.strings */,
+				A78F6FA6199C451D00A0E7C4 /* main.m */,
+				A78F6FA8199C451D00A0E7C4 /* AESCrypt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A78F6FB9199C451D00A0E7C4 /* AESCryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				A78F6FBF199C451D00A0E7C4 /* AESCryptTests.m */,
+				A78F6FBA199C451D00A0E7C4 /* Supporting Files */,
+			);
+			path = AESCryptTests;
+			sourceTree = "<group>";
+		};
+		A78F6FBA199C451D00A0E7C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A78F6FBB199C451D00A0E7C4 /* AESCryptTests-Info.plist */,
+				A78F6FBC199C451D00A0E7C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7E4FED119AB29FA00DC7E98 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4FED219AB29FA00DC7E98 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A78F6F96199C451D00A0E7C4 /* AESCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78F6FC3199C451D00A0E7C4 /* Build configuration list for PBXNativeTarget "AESCrypt" */;
+			buildPhases = (
+				A78F6F93199C451D00A0E7C4 /* Sources */,
+				A78F6F94199C451D00A0E7C4 /* Frameworks */,
+				A78F6F95199C451D00A0E7C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AESCrypt;
+			productName = AESCrypt;
+			productReference = A78F6F97199C451D00A0E7C4 /* AESCrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A78F6FB1199C451D00A0E7C4 /* AESCryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78F6FC6199C451D00A0E7C4 /* Build configuration list for PBXNativeTarget "AESCryptTests" */;
+			buildPhases = (
+				A78F6FAE199C451D00A0E7C4 /* Sources */,
+				A78F6FAF199C451D00A0E7C4 /* Frameworks */,
+				A78F6FB0199C451D00A0E7C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A78F6FB8199C451D00A0E7C4 /* PBXTargetDependency */,
+			);
+			name = AESCryptTests;
+			productName = AESCryptTests;
+			productReference = A78F6FB2199C451D00A0E7C4 /* AESCryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A78F6F8F199C451D00A0E7C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = changyou;
+				TargetAttributes = {
+					A78F6FB1199C451D00A0E7C4 = {
+						TestTargetID = A78F6F96199C451D00A0E7C4;
+					};
+				};
+			};
+			buildConfigurationList = A78F6F92199C451D00A0E7C4 /* Build configuration list for PBXProject "AESCrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A78F6F8E199C451D00A0E7C4;
+			productRefGroup = A78F6F98199C451D00A0E7C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A78F6F96199C451D00A0E7C4 /* AESCrypt */,
+				A78F6FB1199C451D00A0E7C4 /* AESCryptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A78F6F95199C451D00A0E7C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F6FA5199C451D00A0E7C4 /* InfoPlist.strings in Resources */,
+				A7E4FEDA19AB29FA00DC7E98 /* Images.xcassets in Resources */,
+				A7E4FED919AB29FA00DC7E98 /* InfoPlist.strings in Resources */,
+				A78F6FAD199C451D00A0E7C4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78F6FB0199C451D00A0E7C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F6FBE199C451D00A0E7C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A78F6F93199C451D00A0E7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E4FED719AB29FA00DC7E98 /* AES.cpp in Sources */,
+				A78F6FAB199C451D00A0E7C4 /* AppDelegate.m in Sources */,
+				A7E4FED819AB29FA00DC7E98 /* BFViewController.mm in Sources */,
+				A78F6FA7199C451D00A0E7C4 /* main.m in Sources */,
+				A7E4FEDB19AB29FA00DC7E98 /* NSString+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78F6FAE199C451D00A0E7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F6FC0199C451D00A0E7C4 /* AESCryptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A78F6FB8199C451D00A0E7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A78F6F96199C451D00A0E7C4 /* AESCrypt */;
+			targetProxy = A78F6FB7199C451D00A0E7C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A78F6FA3199C451D00A0E7C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78F6FA4199C451D00A0E7C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A78F6FBC199C451D00A0E7C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78F6FBD199C451D00A0E7C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A7E4FED219AB29FA00DC7E98 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E4FED319AB29FA00DC7E98 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A78F6FC1199C451D00A0E7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A78F6FC2199C451D00A0E7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A78F6FC4199C451D00A0E7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AESCrypt/AESCrypt-Prefix.pch";
+				INFOPLIST_FILE = "AESCrypt/AESCrypt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A78F6FC5199C451D00A0E7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AESCrypt/AESCrypt-Prefix.pch";
+				INFOPLIST_FILE = "AESCrypt/AESCrypt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A78F6FC7199C451D00A0E7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AESCrypt.app/AESCrypt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AESCrypt/AESCrypt-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AESCryptTests/AESCryptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A78F6FC8199C451D00A0E7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AESCrypt.app/AESCrypt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AESCrypt/AESCrypt-Prefix.pch";
+				INFOPLIST_FILE = "AESCryptTests/AESCryptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A78F6F92199C451D00A0E7C4 /* Build configuration list for PBXProject "AESCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78F6FC1199C451D00A0E7C4 /* Debug */,
+				A78F6FC2199C451D00A0E7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A78F6FC3199C451D00A0E7C4 /* Build configuration list for PBXNativeTarget "AESCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78F6FC4199C451D00A0E7C4 /* Debug */,
+				A78F6FC5199C451D00A0E7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A78F6FC6199C451D00A0E7C4 /* Build configuration list for PBXNativeTarget "AESCryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78F6FC7199C451D00A0E7C4 /* Debug */,
+				A78F6FC8199C451D00A0E7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A78F6F8F199C451D00A0E7C4 /* Project object */;
+}
